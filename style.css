@@ -1,11 +1,26 @@
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
 body{
     background: #080808;
     color: #fff;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
 }
 
 header{
@@ -105,11 +120,23 @@ nav ul li a:hover::after{
     position: relative;
     bottom: 0;
     width: 100%;
-    padding: 40px 0;
+    padding: 1% 0;
     background-color: #008cff;
+    margin-bottom: 0%;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
 }
 
 .footer ul{
+    list-style: none;
+}
+
+.footer ul li{
 margin-top: 0;
 padding: 0;
 font-size: 18px;
@@ -118,9 +145,25 @@ margin-bottom: 0;
 text-align: center;
 }
 
+.footer ul li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.footer ul li a:hover{
+    background-color: bisque;
+    color: #080808;
+}
+
 .footer .copyright{
     margin-top: 15px;
     text-align: center;
     font-size: 12px;
     color: #fff;
+}
+
+.skills{
+    margin-top: 20px;
+    list-style: square;
 }
